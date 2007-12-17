@@ -10,7 +10,6 @@ License: GPL
 Group: Development/Other
 Source: %{name}-%{version}.tar.bz2
 URL: http://www.cooptel.qc.ca/~limitln/cvsadmin/
-BuildRoot: %{_tmppath}/%{name}-buildroot
 
 %description
 cvsadmin is a simple program to administrate users of a CVS repository. 
