@@ -1,16 +1,16 @@
-%define name cvsadmin
-%define version 1.0.3
-%define release %mkrel 9
+%define	name	cvsadmin
+%define	version	1.0.3
+%define	release	%mkrel 10
 
-Version: %{version}
-Summary: Tool to administer users of a CVS repository
-Name: %{name}
-Release: %{release}
-License: GPL
-Group: Development/Other
-Source: %{name}-%{version}.tar.bz2
-URL: http://www.cooptel.qc.ca/~limitln/cvsadmin/
-BuildRoot: %{_tmppath}/%{name}-buildroot
+Version:	%{version}
+Summary:	Tool to administer users of a CVS repository
+Name:		%{name}
+Release:	%{release}
+License:	GPLv2
+Group:		Development/Other
+Source:		%{name}-%{version}.tar.bz2
+URL:		ftp://ftp.freebsd.org/pub/FreeBSD/ports/local-distfiles/gabor/
+BuildRoot:	%{_tmppath}/%{name}-buildroot
 
 %description
 cvsadmin is a simple program to administrate users of a CVS repository. 
@@ -24,18 +24,14 @@ It currently allows you to easily
 - change system users
 
 %prep
-
 %setup -q
 
 %build
-
 %configure
-
 %make
 
 %install
 rm -rf $RPM_BUILD_ROOT
-
 %makeinstall
 
 %clean
