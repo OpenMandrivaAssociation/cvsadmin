@@ -1,6 +1,6 @@
 %define	name	cvsadmin
 %define	version	1.0.3
-%define	release	%mkrel 11
+%define release	12
 
 Version:	%{version}
 Summary:	Tool to administer users of a CVS repository
