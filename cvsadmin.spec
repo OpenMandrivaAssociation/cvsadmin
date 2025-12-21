@@ -12,6 +12,11 @@ Source:		%{name}-%{version}.tar.bz2
 URL:		ftp://ftp.freebsd.org/pub/FreeBSD/ports/local-distfiles/gabor/
 BuildRoot:	%{_tmppath}/%{name}-buildroot
 
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
+BuildRequires:	make
 %description
 cvsadmin is a simple program to administrate users of a CVS repository. 
 
